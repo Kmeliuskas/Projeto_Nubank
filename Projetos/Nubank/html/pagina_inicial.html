@@ -133,14 +133,20 @@
 
           <div class="informacoes-caixa-branca">
              <h4>Peça sua conta e cartão de crédito do Nubank</h4>
-             <div class="form-floating mb-3 mt-5">
-                <input type="text" class="form-control" id="CPF" name="CPF" placeholder="Digite seu CPF" required>
+
+             <form class="row needs-validation" novalidate>
+
+             <div class="form-floating mb-3 mt-5 forms">
+                <input type="number" class="form-control" id="CPF" name="CPF" placeholder="Digite seu CPF" required min="001111111111" max="09999999999">
                 <label for="CPF" class="form-label">Digite seu CPF:</label>
                 <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Senha inválida</div>
+                <div class="invalid-feedback">Digite um CPF válido</div>
              </div>
+
              <!-- Botão enviar -->
              <input type="submit" class="btn" value="Concluir" id="botao-enviar">
+
+            </form>
              
           </div>
 

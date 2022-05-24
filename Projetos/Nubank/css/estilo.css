@@ -119,14 +119,17 @@ form a i {
 #botao-enviar {
     padding: 10px;
     background: #820ad1;
-    width: 100%;
+    width: 92%;
     margin: 0px auto;
     border-radius: 60px;
     border: none;
     text-align: start;
     justify-content: center;
     color: #fff;
+    font-weight: 600;
 }
+
+
 
 .forms {
     margin-top: 50px;
@@ -135,21 +138,27 @@ form a i {
 .forms .form-control {
     border: none;
     border-bottom: 1px solid #c3c3c3;
-    color: #c3c3c3;
+    color: #615f5f;
 
 }
 .forms > .form-control ~label {
-    color: grey;
+    color: #c3c3c3;
+}
+
+/* tirando a sombra vermelha do erro de focus */
+.form-control.is-invalid, .was-validated .form-control:invalid:focus {
+    box-shadow: none;
+    
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    color: #dc3545;
+    
 }
 
 .forms .form-control:focus {
     box-shadow: none;
-    border-bottom: 1px solid #575555;
-    color: black;
-
 }
-
-
 
 .imagens .row .caixa-branca h5 {
     margin: 25px 10px 10px 10px;
