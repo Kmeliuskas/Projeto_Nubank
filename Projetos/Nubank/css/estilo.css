@@ -179,10 +179,13 @@ form a i {
 }
 
 /* Footer */
-footer {
-    background: #191919;
 
+.rodape {
+    margin: 0;
+    padding: 0;
+    background: #191919;
 }
+
 
 /*Media Queries */
 
