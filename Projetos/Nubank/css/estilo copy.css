@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Formatações Gerais */
+* {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+#logo_imagem {
+    padding: 1px;
+    margin-right: 10px;
+}
+
+#nav_principal #navbarSupportedContent li {
+    
+    margin-left: 10px;
+}
+
+ul li .badge.rounded-pill {
+    background-color: #ebd7fa;
+    color: black;
+}
+
+/* Link Login */
+form a  {
+    margin-left: 9px;
+    color: #820ad1;
+    text-decoration: none;
+}
+
+form a i {
+    font-size: 19px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+
+}
+
+/* Imagens do conteudo  */
+.imagem-principal {
+    height: 800px;
+    background-image: url(../img/Fundo_tela_principal.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.imagem-secundaria {
+    height: 800px;
+    background-image: url(../img/three-women-smiling-outdoors-lg-3x.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.imagem-terciaria {
+    height: 800px;
+    background-image: url(../img/three-young-people-outdoors-leaning-against-the-wall-lg-3x.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.imagem-quartenaria {
+    height: 1000px;
+    background-image: url(../img/man-with-cellphone-lg-3x.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.informacoes-da-imagem {
+    
+    left: 12%;
+    top: 40%;
+    color: #fff;
+
+}
+.link-login, form a::before {
+    content: '';
+    position: absolute;
+    background-color: #820ad1;
+    width: 0%;
+    height: 3px;    
+    top: 40px;
+    transition: 0.3s;
+}
+
+
+.link-login, form a:hover {
+    color: #820ad1;
+}
+.link-login, form a:hover::before  {
+    width:3%;
+}
+
+
+/* Caixa branca  */
+.caixa-branca {
+    background: #fff;
+    width: 330px;
+    height: 330px;
+    border-radius: 15px;
+    
+    
+
+}
+.informacoes-caixa-branca {
+    padding: 25px;
+}
+
+#botao-enviar {
+    padding: 10px;
+    background: #820ad1;
+    width: 92%;
+    margin: 0px auto;
+    border-radius: 60px;
+    border: none;
+    text-align: start;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.forms {
+    margin-top: 50px;
+}
+
+.forms .form-control {
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    color: #615f5f;
+
+}
+.forms > .form-control ~label {
+    color: #c3c3c3;
+}
+
+/* tirando a sombra vermelha do erro de focus */
+.form-control.is-invalid, .was-validated .form-control:invalid:focus {
+    box-shadow: none;
+    
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    color: #dc3545;
+    
+}
+
+.forms .form-control:focus {
+    box-shadow: none;
+}
+
+.imagens .row .caixa-branca h5 {
+    margin: 25px 10px 10px 10px;
+
+}
+
+.imagens .row .imagem-principal {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/* Imagem dos cartõess roxinhos */
+.container-img-1 .row {
+    padding: 0px;
+    padding: 50px;
+    
+}
+
+.tamanho-imagens {
+    width: 30%;
+    height: 30%;
+    margin-left: 10%;
+}
+ 
+.imagem-3 {
+    width: 25%;
+    height: 25%;
+    margin-left: 10%;
+}
+
+/* Footer */
+footer {
+    background: #191919;
+
+}
+
+/*Media Queries */
+
+/* Removendo o hover em celulares e tablets */
+@media (max-width: 991px) {
+    .link-login, form a:hover::before  {
+        width:0%;
+    }
+}
+
+/* Mudando o tamanho das fotos em tamanhos especificos (tables e celulares)  */
+@media (max-width: 768px) {
+    .tamanho-imagens {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    .imagem-3 {
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+
+    /* Reposicionando a caixa branca de CPF e texto */
+    .imagens .row .caixa-branca {
+        background: #fff;
+        width: 330px;
+        height: 330px;
+        border-radius: 15px;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    
+    }
+
+     
+}
+
+
+
+
