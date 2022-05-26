@@ -46,6 +46,25 @@ form a i {
 
 }
 
+.link-login, form a::before {
+    content: '';
+    position: absolute;
+    background-color: #820ad1;
+    width: 0%;
+    height: 3px;    
+    top: 40px;
+    transition: 0.3s;
+}
+
+
+.link-login, form a:hover {
+    color: #820ad1;
+}
+.link-login, form a:hover::before  {
+    width:3%;
+}
+/* Fim Header */
+
 /* Imagens do conteudo  */
 .imagem-principal {
     height: 800px;
@@ -72,7 +91,7 @@ form a i {
 }
 
 .imagem-quartenaria {
-    height: 1000px;
+    height: 800px;
     background-image: url(../img/man-with-cellphone-lg-3x.jpeg);
     background-size: cover;
     position: relative;
@@ -85,23 +104,7 @@ form a i {
     color: #fff;
 
 }
-.link-login, form a::before {
-    content: '';
-    position: absolute;
-    background-color: #820ad1;
-    width: 0%;
-    height: 3px;    
-    top: 40px;
-    transition: 0.3s;
-}
 
-
-.link-login, form a:hover {
-    color: #820ad1;
-}
-.link-login, form a:hover::before  {
-    width:3%;
-}
 
 
 /* Caixa branca  */
@@ -110,10 +113,8 @@ form a i {
     width: 330px;
     height: 330px;
     border-radius: 15px;
-    
-    
-
 }
+
 .informacoes-caixa-branca {
     padding: 25px;
 }
@@ -130,8 +131,6 @@ form a i {
     color: #fff;
     font-weight: 600;
 }
-
-
 
 .forms {
     margin-top: 50px;
@@ -193,11 +192,45 @@ form a i {
     margin-left: 10%;
 }
 
-/* Footer */
-footer {
+
+/* Rodapé */
+
+footer .row {
     background: #191919;
+    padding: 25px;
 
 }
+
+footer .row ul li a {
+    color: #fff;
+}
+
+footer .row ul li a:hover {
+    color: #820ad1;
+}
+
+
+/* Navegação Final */
+#nav-final .row {
+    border-top:  1px solid #272626;
+    background-color: #191919;
+}
+
+#nav-final .nav-final {
+    margin: 80px auto;
+}
+
+#logo_imagem_final {
+    padding: 1px;
+    margin-right: 20px;
+}
+
+.nav-final .icones i {
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+}
+
 
 /*Media Queries */
 
@@ -209,7 +242,7 @@ footer {
 }
 
 /* Mudando o tamanho das fotos em tamanhos especificos (tables e celulares)  */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .tamanho-imagens {
         width: 100%;
         height: 100%;
@@ -222,18 +255,9 @@ footer {
         margin-left: 20%;
     }
 
-    /* Reposicionando a caixa branca de CPF e texto */
-    .imagens .row .caixa-branca {
-        background: #fff;
-        width: 330px;
-        height: 330px;
-        border-radius: 15px;
-        position: absolute;
-        top: 30%;
-        left: 25%;
-    
-    }
-
+    .espaço-cima {
+        margin-top: 20px;
+    }    
      
 }
 
