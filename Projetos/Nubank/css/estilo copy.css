@@ -91,20 +91,17 @@ form a i {
 }
 
 .imagem-quartenaria {
-    height: 800px;
+    height: 600px;
     background-image: url(../img/man-with-cellphone-lg-3x.jpeg);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
 }
 .informacoes-da-imagem {
-    
     left: 12%;
     top: 40%;
     color: #fff;
-
 }
-
 
 
 /* Caixa branca  */
@@ -212,7 +209,8 @@ footer .row ul li a:hover {
 
 /* Navegação Final */
 #nav-final .row {
-    border-top:  1px solid #272626;
+    border-top: 1px solid #272626;;
+    border-bottom: 1px solid #272626;;
     background-color: #191919;
 }
 
@@ -229,7 +227,68 @@ footer .row ul li a:hover {
     color: #fff;
     padding: 15px;
     font-size: 20px;
+    transition: 0.3s;
 }
+.nav-final .icones i:hover {
+    color: #820ad1;
+}
+
+#final ul li p {
+    color: #fff;
+}
+
+/* Links linguagens */
+#linguagens .row {
+    background: #191919;
+    height: 160px;
+}
+
+#linguagens .row .linguagem {
+    padding: 40px;
+}
+
+#linguagens .row .linguagem label {
+    color: #fff;
+}
+
+#linguagens .row .linguagem label:hover {
+    color: #820ad1;
+    text-decoration: underline;
+}
+
+#linguagens .row .radio2 {
+    margin-left: 50px;
+}
+
+/* Formatando o input radio */
+.form-check-input[type=radio] {
+    background: none;
+    border: 1px solid #fff;
+}
+
+
+.form-check-input[type=radio]:focus {
+    box-shadow: none;
+}
+
+
+.form-check-input[type=radio]:hover {
+    border: 1px solid #820ad1;
+}
+
+.form-check-input[type=radio]:hover::before {
+    background-color: inherit;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+}
+
+
+
+
+
 
 
 /*Media Queries */
@@ -241,7 +300,7 @@ footer .row ul li a:hover {
     }
 }
 
-/* Mudando o tamanho das fotos em tamanhos especificos (tables e celulares)  */
+/* Mudando o tamanho das fotos em tamanhos especificos (tables e celulares) e colocando um top no rodapé  */
 @media (max-width: 991px) {
     .tamanho-imagens {
         width: 100%;
