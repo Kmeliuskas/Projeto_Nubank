@@ -16,13 +16,31 @@ body {
 
 /* Header */
 
+.navbar-light .navbar-nav .nav-link{
+    color: #191919;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #820ad1;
+    transition: 0.2s;
+}
+
+.dropdown-header {
+    color: #820ad1;
+}
+
+.dropdown-item:hover {
+    background: none;
+    transition: 0.3s;
+    color: #820ad1;
+}
+
 #logo_imagem {
     padding: 1px;
     margin-right: 10px;
 }
 
 #nav_principal #navbarSupportedContent li {
-    
     margin-left: 10px;
 }
 
@@ -31,29 +49,68 @@ ul li .badge.rounded-pill {
     color: black;
 }
 
-/* Link Login */
-form a  {
-    margin-left: 9px;
+.girar{
+    transform: rotate(-90deg);
+}
+
+/* lINK LOGIN ATUALIZADO */
+.link-login{
+    cursor: pointer;
+    position: relative;
+}
+
+.link-login::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 2px;
+    background-color: red;
+    transition: 0.2s;
+}
+
+.link-login:hover::after {
+    content: '';
+    width: 100px;
+    height: 10px;
+    color: #dc3545;
+}
+
+.link-login i{
+    margin-left: 10px;
+}
+
+.link-login i:hover{
+    margin-left: 10px;
+}
+
+.link-login a,i {
+    text-decoration: none;
+    color: #820ad1;
+}
+
+
+/* DESCOMENTAR DEPOIS *********  */
+/* form a, i  {
+    margin-left: 0px;
     color: #820ad1;
     text-decoration: none;
 }
 
-form a i {
-    font-size: 19px;
-    margin-left: 5px;
-    position: relative;
-    top: 2px;
-
+i {
+    margin-left: 10px;
 }
+
+
 
 .link-login, form a::before {
     content: '';
     position: absolute;
     background-color: #820ad1;
     width: 0%;
-    height: 3px;    
+    height: 2px;    
     top: 40px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 
@@ -63,9 +120,29 @@ form a i {
 .link-login, form a:hover::before  {
     width:3%;
 }
-/* Fim Header */
+Fim Header */
+
+/* DESCOMENTAR DEPOIS *********  */
+
+
+
 
 /* Imagens do conteudo  */
+
+.container-img-1 {
+    padding: 50px;
+}
+
+.container-img-1 h1 a {
+    color: #820ad1;
+    text-decoration: none;
+}
+ 
+.container-img-1 h1 a:hover {
+    color: #820ad1;
+    text-decoration: underline;
+}
+
 .imagem-principal {
     height: 800px;
     background-image: url(../img/Fundo_tela_principal.jpeg);
@@ -103,7 +180,10 @@ form a i {
     color: #fff;
 }
 
-
+.container-fluid .informacoes-da-imagem a {
+    color: #fff;
+    text-decoration: none;
+}
 /* Caixa branca  */
 .caixa-branca {
     background: #fff;
@@ -170,7 +250,7 @@ form a i {
 
 
 
-/* Imagem dos cartõess roxinhos */
+/* Imagem dos cartões roxinhos */
 .container-img-1 .row {
     padding: 0px;
     padding: 50px;
@@ -253,7 +333,6 @@ footer .row ul li a:hover {
 
 #linguagens .row .linguagem label:hover {
     color: #820ad1;
-    text-decoration: underline;
 }
 
 #linguagens .row .radio2 {
@@ -266,6 +345,15 @@ footer .row ul li a:hover {
     border: 1px solid #fff;
 }
 
+.form-check-input:checked[type=radio] {
+    background-color: inherit;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
 
 .form-check-input[type=radio]:focus {
     box-shadow: none;
@@ -276,13 +364,18 @@ footer .row ul li a:hover {
     border: 1px solid #820ad1;
 }
 
-.form-check-input[type=radio]:hover::before {
-    background-color: inherit;
+.form-check-input:checked[type=radio]:hover::before {
+    background-color: #820ad1;
     border-radius: 50%;
     content: "";
     display: block;
-    height: 6px;
-    width: 6px;
+    height: 7.5px;
+    width: 7.5px;
+    position: relative;
+    top: 3px;
+    left: 3.3px;
+    right: 0px;
+    bottom: 0px;
 }
 
 
