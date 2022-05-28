@@ -49,7 +49,7 @@ ul li .badge.rounded-pill {
     color: black;
 }
 
-.link-login .girar a i {
+.girar i  {
     transform: rotate(-90deg);
 }
 
@@ -65,8 +65,6 @@ ul li .badge.rounded-pill {
     position: absolute;
     width: 0;
     height: 0;
-    
-    
 }
 
 .link-login:hover::after {
@@ -75,7 +73,7 @@ ul li .badge.rounded-pill {
     height: 2px;
     left: 0;
     top: 20px;
-    transition: 0.1s linear;
+    transition: 0.2s linear;
     background-color: #820ad1;
 }
 
@@ -92,59 +90,6 @@ ul li .badge.rounded-pill {
     color: #820ad1;
 }
 
-
-/* DESCOMENTAR DEPOIS *********  */
-/* form a, i  {
-    margin-left: 0px;
-    color: #820ad1;
-    text-decoration: none;
-}
-
-i {
-    margin-left: 10px;
-}
-
-
-
-.link-login, form a::before {
-    content: '';
-    position: absolute;
-    background-color: #820ad1;
-    width: 0%;
-    height: 2px;    
-    top: 40px;
-    transition: 0.2s;
-}
-
-
-.link-login, form a:hover {
-    color: #820ad1;
-}
-.link-login, form a:hover::before  {
-    width:3%;
-}
-Fim Header */
-
-/* DESCOMENTAR DEPOIS *********  */
-
-
-
-
-/* Imagens do conteudo  */
-
-.container-img-1 {
-    padding: 50px;
-}
-
-.container-img-1 h1 a {
-    color: #820ad1;
-    text-decoration: none;
-}
- 
-.container-img-1 h1 a:hover {
-    color: #820ad1;
-    text-decoration: underline;
-}
 
 .imagem-principal {
     height: 800px;
@@ -206,7 +151,7 @@ Fim Header */
     margin: 0px auto;
     border-radius: 60px;
     border: none;
-    text-align: start;
+    text-align: center;
     justify-content: center;
     color: #fff;
     font-weight: 600;
@@ -251,13 +196,92 @@ Fim Header */
     margin: 0px;
 }
 
+/* Imagens do conteudo  */
+/* fORMNATAÇÃO GERAL DAS CLASSES H1 DENTRO DAS IMAGENS PRINCIPAIS */ 
+.container-img-1 {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
 
-
-/* Imagem dos cartões roxinhos */
 .container-img-1 .row {
     padding: 0px;
     padding: 50px;
+}
+
+.container-img-1.roxinho {
+    padding: 50px;
+    background-color: #fff;
+}
+
+
+.container-img-1 .row .h1 {
+    color: #820ad1;
+    text-decoration: none;    
+}
+
+.container-img-1 .row .h1:hover {
+    color: #820ad1;
+    text-decoration: underline;    
+}
+
+.container-img-1 .link-underline {
+    position: relative;
+    width: 0%;
+    text-decoration: none;
+    color: #820ad1;
+}
+.container-img-1 .link-underline i {
+    margin-left: 10px;
+}
+
+.container-img-1 .link-underline::after {
+    content: '';
+    position: relative;
+    width: 0%;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    background-color: #820ad1;
     
+}
+
+.container-img-1 .link-underline:hover::after {
+    position: absolute;
+    width: 100%;
+    text-decoration: underline;
+    color: #820ad1;
+    transition: 0.2s;
+}
+
+
+.link-imagens-grandes .link-underline {
+    position: relative;
+    width: 0%;
+    text-decoration: none;
+    color: #fff;
+}
+.link-imagens-grandes .link-underline i {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.link-imagens-grandes .link-underline::after {
+    content: '';
+    position: relative;
+    width: 0%;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    
+}
+
+.link-imagens-grandes .link-underline:hover::after {
+    position: absolute;
+    width: 100%;
+    text-decoration: underline;
+    color: #820ad1;
+    transition: 0.2s;
 }
 
 .tamanho-imagens {
@@ -321,6 +345,12 @@ footer .row ul li a:hover {
 }
 
 /* Links linguagens */
+.icone-rodape {
+    margin-left: 10px;
+    color: #fff;
+    
+}
+
 #linguagens .row {
     background: #191919;
     height: 160px;
@@ -348,6 +378,26 @@ footer .row ul li a:hover {
     border: 1px solid #fff;
 }
 
+.form-check-input[type=radio]:hover {
+    border: 1px solid #820ad1;
+    position: relative;
+}
+
+.form-check-input[type=radio]:hover::after {
+    border: 1px solid #820ad1;
+    border-radius: 50%;
+    background-color: #820ad1;
+    content: "";
+    display: block;
+    height: 7.5px;
+    width: 7.5px;
+    position: absolute;
+    top: 3px;
+    left: 3.3px;
+    right: 0px;
+    bottom: 0px;
+}
+
 .form-check-input:checked[type=radio] {
     background-color: inherit;
     border-radius: 50%;
@@ -362,10 +412,6 @@ footer .row ul li a:hover {
     box-shadow: none;
 }
 
-
-.form-check-input[type=radio]:hover {
-    border: 1px solid #820ad1;
-}
 
 .form-check-input:checked[type=radio]:hover::before {
     background-color: #820ad1;
@@ -412,7 +458,11 @@ footer .row ul li a:hover {
 
     .espaço-cima {
         margin-top: 20px;
-    }    
+    }
+    
+    .link-login{
+        margin-left: 10px;
+    }
      
 }
 
