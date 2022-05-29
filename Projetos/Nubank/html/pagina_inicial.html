@@ -48,16 +48,13 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <li><h6 class="dropdown-header">Nubank</h6></li>
-                              <li class="dropdown-item "></li>
                               <li><a class="dropdown-item" href="#">Cartão de Crédito <span class="badge rounded-pill">novo</span></a></li>
                               <li><a class="dropdown-item" href="#">Conta do Nubank</a></li>
                               <li><a class="dropdown-item" href="#">Tudo sobre Pix</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li class="dropdown-item "></li>
                               <li><h6 class="dropdown-header">Nubank Ultravioleta</h6></li>
                               <li><a class="dropdown-item" href="#">Cartão de Crédito</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li class="dropdown-item "></li>
                               <li><h6 class="dropdown-header">Outros produtos</h6></li>
                               <li><a class="dropdown-item" href="#">Empréstimo pessoal</a></li>
                               <li><a class="dropdown-item" href="#">Seguro de vida</a></li>
@@ -71,7 +68,6 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <li><h6 class="dropdown-header">Nubank PJ</h6></li>
-                              <li class="dropdown-item "></li>
                               <li><a class="dropdown-item" href="#">Conta PJ</a></li>
                               <li><a class="dropdown-item" href="#">Cartão de crédito PJ <span class="badge rounded-pill">novo</span></a></li>
                             </ul>
@@ -81,22 +77,19 @@
                               O Nubank
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><h6 class="dropdown-header">sobre nós</h6></li>
-                              <li class="dropdown-item "></li>
+                              <li><h6 class="dropdown-header">Sobre nós</h6></li>
                               <li><a class="dropdown-item" href="#">O Nu</a></li>
                               <li><a class="dropdown-item" href="#">Sala de imprensa</a></li>
                               <li><a class="dropdown-item" href="#">Carreiras</a></li>
                               <li><a class="dropdown-item" href="#">Nu Impacto</a></li>
                               <li><a class="dropdown-item" href="#">Investidores</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li class="dropdown-item "></li>
                               <li><h6 class="dropdown-header">Outros canais</h6></li>
                               <li><a class="dropdown-item" href="#">Blog</a></li>
                               <li><a class="dropdown-item" href="#">Newsletter</a></li>
                               <li><a class="dropdown-item" href="#">Comunidade</a></li>
                               <li><a class="dropdown-item" href="#">InvestNews</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li class="dropdown-item "></li>
                               <li><h6 class="dropdown-header">Nubank pelo mundo</h6></li>
                               <li><a class="dropdown-item" href="#">México</a></li>
                               <li><a class="dropdown-item" href="#">Colômbia</a></li>
@@ -109,9 +102,13 @@
                           </li>
                         </ul>
                         
-                        <form class="d-flex">
-                          <a href="#">Login <i class="bi bi-box-arrow-in-right"></i></a>
-                        </form>
+                        <div class="link-login">
+                          <form class="d-flex girar">
+                            <a href="../html/login.html">Login</a>
+                            <i class="bi bi-download "></i>
+                          </form>
+                        </div>
+                        
                       </div>
                     </div>
                   </nav>
@@ -122,14 +119,14 @@
     <!-- Imagem principal -->
     <div class="container-fluid" id="imagem-principal">
       
-      <div class="imagem-principal">
-        <div class="informacoes-da-imagem row">
+      <div class=" row d-flex imagem-principal align-items-center justify-content-around">
+        <div class="informacoes-da-imagem col-6">
           <h1>O futuro é a razão que <br> a gente faz planos.</h1>
           <p class="h4">Escolha o futuro. Comece a controlar  melhor <br> sua vida financeira com o Nubank.</p>
         </div>
 
         <!-- caixa branca -->
-        <div class="caixa-branca">
+        <div class="caixa-branca col-6">
 
           <div class="informacoes-caixa-branca">
              <h4>Peça sua conta e cartão de crédito do Nubank</h4>
@@ -157,21 +154,23 @@
     </div> <!-- Fim Imagem principal -->
     
   
+
+
       <!-- primeira imagem dos cartões roxinhos -->
-      <div class="container-fluid container-img-1">
+      <div class="container-fluid container-img-1 roxinho">
         <div class="row col-12">
-          <h1 class="col-sm-12 col-lg-6 g-sm-4 order-1"><a class="h1" href="">Cartão de Crédito</a>
-            <br> Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também. <br><a class="oder-3" href="#">Saiba mais</a></h1>
+          <h1 class="col-sm-12 col-lg-6 g-sm-4 "><a class="h1" href="">Cartão de Crédito</a>
+            <br> Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também. <br><a class="oder-3 link-underline" href="#">Saiba mais <i class="bi bi-arrow-right"></i></a> </h1>
             
-          <img class="col-sm-12 col-lg-6 order-2" src="../img/roxinhos flutuantes-2.jpeg" alt="">
+          <img class="col-sm-12 col-lg-6 order-2 img-fluid" src="../img/roxinhos flutuantes-2.jpeg" alt="">
         </div>
       </div>
 
       <!-- Segunda imagem cartões roxo escuro -->
       <div class="container-fluid container-img-1">
-        <div class="row">
-          <h1 class="col-sm-12 col-lg-6 g-sm-5 order-1"><a class="h1" href="">Nubank Ultravioleta</a>
-           <br> O cartão pensado para quem quer ver além <br> <a href="#">Saiba mais</a></h1>
+        <div class="row ">
+          <h1 class="col-sm-12 col-lg-6 g-sm-4 "><a class="h1" href="">Nubank Ultravioleta</a>
+           <br> O cartão pensado para quem quer ver além <br> <a class="link-underline" href="#">Saiba mais <i class="bi bi-arrow-right "></i></a></h1>
             
           <img class="col-sm-12 col-lg-6 order-2 g-1 tamanho-imagens" src="../img/ultraviolet-card-floating.jpeg" alt="">
         </div>
@@ -181,48 +180,64 @@
       <div class="container-fluid container-img-1">
         <div class="row">
            <h1 class="col-sm-12 col-lg-6 g-sm-5 order-1"><a class="h1" href="">Conta do Nubank</a>
-           <br>  A conta que vai levar você ao controle da sua vida financeira. <br> <a href="#">Sem tarifas e sem complicações</a>
+           <br>  A conta que vai levar você ao controle da sua vida financeira. <br> <a class="link-underline" href="#">Sem tarifas e sem complicações <i class="bi bi-arrow-right"></i></a>
            </h1>
-          <img class="col-sm-12 col-lg-6 order-2 g-1 imagem-3" src="../img/nuconta-inclined-device-3x.jpeg" alt="">
+          <img class="col-sm-12 col-lg-6 order-2 g-1 imagem-3" src="../img/nuconta-inclined-device-3x.jpeg" alt="" height="70">
         </div>
       </div>
+
 
       <!-- Imagem com 3 mulheres na faixa de pedestre-->
-      <div class="container-fluid imagens">
-        <div class="row">
-           <img class="col-12 img-fluid imagem-principal " src="../img/three-women-smiling-outdoors-lg-3x.jpeg" alt="">
+      <!-- Imagem Secundaria -->
+    <div class="container-fluid link-imagens-grandes" id="imagem-secundaria">
+      
+      <div class=" row d-flex imagem-secundaria align-items-center justify-content-around">
+        <div class="informacoes-da-imagem col-8">
+          <h1 class="col-6">Nós acreditamos que só uma pessoa pode ter controle sobre sua vida financeira: você.</h1>
+          <a class="link-underline" href=""> Saiba mais sobre como fazemos isso <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
+    </div> <!-- Fim Imagem Secundaria -->
+
       
       <!-- Imagem com 3 pessoas e uma ruiva no meio -->
-      <div class="container-fluid imagens">
-        <div class="row">
-           <img class="col-12 img-fluid imagem-principal" src="../img/three-young-people-outdoors-leaning-against-the-wall-lg-3x.jpeg" alt="">
+      <div class="container-fluid link-imagens-grandes" id="imagem-terciaria">
+      
+      <div class=" row d-flex imagem-terciaria align-items-center justify-content-around">
+        <div class="informacoes-da-imagem col-8">
+          <h1 class="col-6">NuCommunity A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.</h1>
+          <a class="link-underline" href="">Faça parte <span style="font-size: 14px;"> <i class="bi bi-arrow-up-right"></i> </span> </a>
         </div>
       </div>
+    </div> <!-- Fim Imagem Secundaria -->
 
       <!-- Imagem com homem segurando celular -->
-      <div class="container-fluid imagens">
-        <div class="row">
-           <img class="col-12 img-fluid imagem-principal" src="../img/man-with-cellphone-lg-3x.jpeg" alt="">
+      <div class="container-fluid link-imagens-grandes" id="imagem-quartenaria">
+      
+        <div class=" row d-flex imagem-quartenaria align-items-center justify-content-around">
+          <div class="informacoes-da-imagem col-8">
+            <h1 class="col-6">Muita informação e conteúdo para você encontrar a melhor versão da sua vida financeira</h1>
+            <a class="link-underline" href="">Fala, Nubank <i class="bi bi-arrow-up-right"></i></a>
+          </div>
         </div>
-      </div>
+      </div> <!-- Fim Imagem Secundaria -->
       
     </div> <!-- Fim Imagens -->
+
 
     <!-- Rodapé -->
     <div class="container-fluid rodape">
 
       <!-- Inicio footer -->
-      <footer class="mt-5">
+      <footer class="">
 
         <div class="row">
 
           <!-- Nubank nav-->
           <div class="col-lg-3 col-md-6">
-            <ul class="nav flex-column">
+            <ul class="nav flex-column ">
               <li class="nav-item">
-                <h6 class="nav-link">Nubank</h6>
+                <h6 class="nav-link titulo-nav">Nubank</h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Sobre nós</a>
@@ -236,8 +251,8 @@
               <li class="nav-item">
                 <a class="nav-link">Imprensa</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">Nu impacto</a>
+              <li class="nav-item d-flex">
+                <a class="nav-link">Nu impacto  <i class="bi bi-arrow-up-right icone-rodape"></i></a> 
               </li>
               <li class="nav-item">
                 <a class="nav-link">investidores</a>
@@ -249,10 +264,10 @@
           <div class="col-lg-3 col-md-6">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <h6 class="nav-link">Produtos</h6>
+                <h6 class="nav-link titulo-nav">Produtos</h6>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Conta Digital</a>
+                <a class="nav-link" aria-current="page" href="#">Conta Digital</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Cartão de crédito</a>
@@ -261,31 +276,31 @@
                 <a class="nav-link" href="#">Nubank Ultravioleta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Empréstimo</a>
+                <a class="nav-link">Empréstimo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Conta PJ</a>
+                <a class="nav-link">Conta PJ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Cartão de crédito PJ</a>
+                <a class="nav-link">Cartão de crédito PJ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Nubank Vida</a>
+                <a class="nav-link">Nubank Vida</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">investimentos</a>
+                <a class="nav-link">investimentos</a>
               </li>
             </ul>
           </div>
 
           <!-- Explore nav -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 espaço-cima">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Explore</h6></a>
+                <h6 class="nav-link titulo-nav">Explore</h6>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Comunidade</a>
+                <a class="nav-link" aria-current="page" href="#">Comunidade</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -294,28 +309,28 @@
                 <a class="nav-link" href="#">InvestNews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Newsletter</a>
+                <a class="nav-link">Newsletter</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">México</a>
+                <a class="nav-link">México</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Argentina</a>
+                <a class="nav-link">Argentina</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Colômbia</a>
+                <a class="nav-link">Colômbia</a>
               </li>
             </ul>
           </div>
           
           <!-- Veja também nav-->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 espaço-cima">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Veja também</h6></a>
+                <h6 class="nav-link titulo-nav">Veja também</h6>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Auxílio Emergencial d FGTS</a>
+                <a class="nav-link" aria-current="page" href="#">Auxílio Emergencial d FGTS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Tudo sobre o Pix</a>
@@ -327,7 +342,7 @@
           <div class="col-lg-3 col-md-6 mt-5">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Transparência</h6></a>
+                <h6 class="nav-link titulo-nav">Transparência</h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Política de Privacidade</a>
@@ -363,7 +378,7 @@
           <div class="col-lg-3 col-md-6 mt-5">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Ouvidoria</h6></a>
+                <h6 class="nav-link titulo-nav">ouvidoria</h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">0800 887 0463</a>
@@ -378,10 +393,10 @@
           </div>
           
           <!-- fale com a gente nav-->
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 mt-5">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Fale com a gente</h6></a>
+                <h6 class="nav-link titulo-nav">Fale com a gente</h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">0800 608 6236</a>
@@ -396,10 +411,10 @@
           </div>
           
           <!-- Baixe o app nav-->
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 mt-5">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#"><h6>Baixe o App</h6></a>
+                <h6 class="nav-link titulo-nav">Baixe o App</h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#"><img src="../img/Etiqueta_nav_footer_aplee.jpeg" alt="Baixe o aplicativo da nubank pela apple store" width="150" height="56"></a>
@@ -410,8 +425,61 @@
             </ul>
           </div>
         </div>
-      </footer> <!-- Fim do footer -->
+      </footer> <!-- Fim footer -->
     </div>
+
+    <!-- Navegação Final -->
+    <div class="container-fluid" id="nav-final">
+      <div class="row"> <!-- inicio row -->
+
+        <nav class="navbar navbar-expand-lg nav-final">
+          <div class="container-fluid">
+            <img class="imagem-logo-final" src="../img/imagem-nav-final-removebg-preview.png" alt="Imagem Nubank navegação final" width="44" height="24" id="logo_imagem_final">
+            
+            <div class="navbar-collapse" id="final">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mt-4">
+                  <p>© 2021  Nu Pagamentos S.A - Instituição de Pagamento.  18.236.120/0001-58 <br>
+                    Rua Capote Valente, 39 - São Paulo, SP - 05409-000</p>
+                </li>
+              </ul>
+              <!-- Icones -->
+              <div class="d-flex justify-content-lg-around justify-content-sm-start" id="icones">
+                <div class="icones">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-youtube"></i>
+                  <i class="bi bi-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+
+      </div> <!-- Fim row -->
+    </div> <!-- Fim Navegação Final -->
+
+    <!-- Links linguagens -->
+    <!-- Inicio container -->
+    <div class="container-fluid" id="linguagens">
+      <div class="row">
+        <div class="d-flex linguagem justify-content-lg-end">
+          <div class="form-check radio1">
+            <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">Português</label>
+          </div>
+          <div class="form-check radio2 ">
+         <input class="form-check-input  " type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+         <label class="form-check-label" for="flexRadioDefault2">Inglês</label>
+          </div>
+        </div>
+
+      </div>
+ 
+    </div> <!-- Fim container -->
+
 
 
 </body>
