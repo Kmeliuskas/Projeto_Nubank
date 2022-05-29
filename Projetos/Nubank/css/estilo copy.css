@@ -259,6 +259,7 @@ ul li .badge.rounded-pill {
     width: 0%;
     text-decoration: none;
     color: #fff;
+    transition: 0.2s;
 }
 .link-imagens-grandes .link-underline i {
     margin-left: 10px;
@@ -273,6 +274,7 @@ ul li .badge.rounded-pill {
     left: 0;
     height: 2px;
     background-color: #fff;
+    transition: 0.2s;
     
 }
 
@@ -313,6 +315,14 @@ footer .row ul li a:hover {
     color: #820ad1;
 }
 
+.titulo-nav {
+    color: #868484;
+}
+
+.titulo-nav:hover {
+    color: #868484;
+    ;
+}
 
 /* Navegação Final */
 #nav-final .row {
