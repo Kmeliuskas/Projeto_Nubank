@@ -228,22 +228,23 @@ ul li .badge.rounded-pill {
 
 .container-img-1 .row .h1 {
     color: #820ad1;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .container-img-1 .row .h1:hover {
     color: #820ad1;
-    text-decoration: underline;    
+    text-decoration: underline;
+}
+
+.container-img-1 .link-underline i {
+    margin-left: 10px;
 }
 
 .container-img-1 .link-underline {
     position: relative;
     width: 0%;
     text-decoration: none;
-    color: #820ad1;
-}
-.container-img-1 .link-underline i {
-    margin-left: 10px;
+    color: #820ad1; 
 }
 
 .container-img-1 .link-underline::after {
@@ -252,14 +253,19 @@ ul li .badge.rounded-pill {
     width: 0%;
     top: 20px;
     left: 0;
+    right: 0;
     height: 2px;
     background-color: #820ad1;
-    
 }
+
 
 .container-img-1 .link-underline:hover::after {
     position: absolute;
     width: 100%;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    right: 0;
     text-decoration: underline;
     color: #820ad1;
     transition: 0.2s;
