@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas sobre o Nu-bank</title>
+
+    <link rel="shortcut icon" href="Nubank_logo_2021.svg" type="image/x-icon">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</head>
+<body>
+
+
+    <!-- Navegação -->
+    <div class="container-fluid">
+        <header class="row" id="header"> 
+                <nav class="navbar navbar-expand-lg navbar-light" id="nav_principal">
+                    <div class="container-fluid">
+                        <img src="Nubank_logo_2021.svg" alt="Logo da Nubank" width="44" height="24" id="logo_imagem">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../html/pagina_inicial.html">Página inicial</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="para_voce" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Para você
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><h6 class="dropdown-header">Nubank</h6></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><a class="dropdown-item" href="#">Cartão de Crédito <span class="badge rounded-pill">novo</span></a></li>
+                              <li><a class="dropdown-item" href="#">Conta do Nubank</a></li>
+                              <li><a class="dropdown-item" href="../Pagina pix/pagina_pix.html">Tudo sobre Pix</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><h6 class="dropdown-header">Nubank Ultravioleta</h6></li>
+                              <li><a class="dropdown-item" href="#">Cartão de Crédito</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><h6 class="dropdown-header">Outros produtos</h6></li>
+                              <li><a class="dropdown-item" href="#">Empréstimo pessoal</a></li>
+                              <li><a class="dropdown-item" href="#">Seguro de vida</a></li>
+                              <li><a class="dropdown-item" href="#">Seguro de celular <span class="badge rounded-pill">novo</span></a></li>
+                              <li><a class="dropdown-item" href="#">investimentos <span class="badge rounded-pill">novo</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="para_negocio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Para seu negócio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><h6 class="dropdown-header">Nubank PJ</h6></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><a class="dropdown-item" href="#">Conta PJ</a></li>
+                              <li><a class="dropdown-item" href="#">Cartão de crédito PJ <span class="badge rounded-pill">novo</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="para_voce" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              O Nubank
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><h6 class="dropdown-header">sobre nós</h6></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><a class="dropdown-item" href="#">O Nu</a></li>
+                              <li><a class="dropdown-item" href="#">Sala de imprensa</a></li>
+                              <li><a class="dropdown-item" href="#">Carreiras</a></li>
+                              <li><a class="dropdown-item" href="#">Nu Impacto</a></li>
+                              <li><a class="dropdown-item" href="#">Investidores</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><h6 class="dropdown-header">Outros canais</h6></li>
+                              <li><a class="dropdown-item" href="#">Blog</a></li>
+                              <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                              <li><a class="dropdown-item" href="#">Comunidade</a></li>
+                              <li><a class="dropdown-item" href="#">InvestNews</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-item disabled"></li>
+                              <li><h6 class="dropdown-header">Nubank pelo mundo</h6></li>
+                              <li><a class="dropdown-item" href="#">México</a></li>
+                              <li><a class="dropdown-item" href="#">Colômbia</a></li>
+                              <li><a class="dropdown-item" href="#">Argentina</a></li>
+                              <li><a class="dropdown-item" href="#">Nu Internacional</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Perguntas</a>
+                          </li>
+                        </ul>
+                        
+                        <form class="d-flex">
+                          <a href="../../../html/login.html">Login <i class="bi bi-box-arrow-in-right"></i></a>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+        </header>
+    </div> <!-- Fim Navegação -->
+
+ <!-- Duvidas? --> 
+ 
+ <div class="container-fluid  mh-500 d-flex align-items-center text-white font-weight-normal" style=" height: 300px; background-color: #820ad1;" id="imagens_inicio "><h1>Dúvidas?</h1></div>
+ <br>
+ <!-- Duvidas fim? --> 
+
+<!-- Sobre a conta --> 
+ <div class=" container-fluid col-12 " style="height: 500px ;"><h2>Sobre a conta do Nubank</h2><div class="col-2"></div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <!-- sobre a conta fim? -->
+
+  <!-- oque e conta nu bank -->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <h4> O que é a conta do Nubank?</h4> 
+           <!-- oque e conta nu bank fim  -->
+            <!-- MENU ACORDEON   -->
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">A conta do Nubank é a nossa conta digital e, assim como tudo no Nubank, foi desenhada para todos que desejam um serviço transparente, simples e sem tarifas abusivas. Ela foi feita para redefinir a maneira como você cuida do seu dinheiro. Para cumprir esse papel, a conta do Nubank:
+
+            — Não tem anuidade, nem taxa de manutenção;
+            
+            — Tem rendimento superior à poupança diário e automático, desde o dia em que seu dinheiro é depositado. Além disso, todos os depósitos contam com algum tipo de garantia;
+            
+            — Oferece transferências gratuitas e ilimitadas para qualquer banco;
+            
+            — Tem um cartão com função débito para você fazer compras e saques;
+            
+            — Possibilita pagamento de boletos como conta de luz, água, telefone e até mesmo compras online.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h4>Vou precisar passar por algum tipo de análise?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Para ter uma conta do Nubank não é preciso passar por nenhuma análise de crédito. Fazemos apenas uma análise cadastral. Nossas únicas restrições são: ter no mínimo 18 anos, ser residente do Brasil, estar com o CPF regular perante a Receita Federal e ter um smartphone compatível com os nossos aplicativos para Android (versão 4.4 ou superior) ou iOS (versão 10 ou superior).</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h4>Não tem nenhuma tarifa?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">A conta do Nubank não tem anuidade, você não paga nada para transferir seu dinheiro para qualquer banco nem para fazer depósitos através de um boleto. Você também não tem nenhum custo para ativar e nem para receber um cartão com a função débito.
+
+            Nossos clientes podem usar as redes Banco24Horas e Saque e Pague para fazer saques. Cada saque realizado terá uma tarifa de R$ 6,50 referente ao preço de custo por utilizarmos essas redes externas. Ou seja, só paga quem usar e quando usar.</div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingfor">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefor" aria-expanded="false" aria-controls="flush-collapsefor">
+          <h4>Como faço para ter meu cartão com a função de débito?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapsefor" class="accordion-collapse collapse" aria-labelledby="flush-headingfor" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">A função débito está disponível para todos os clientes da conta do Nubank! Os clientes interessados em ter um cartão habilitado com essa função devem pedir diretamente pelo nosso app. Abaixo explicamos melhor esse processo.
+
+            Para quem já possui o novo modelo de cartão de crédito Nubank, lançado em setembro de 2018, basta entrar na área da sua Conta, clicar em 'Pedir função débito' e pronto! Se preferir, pode também arrastar sua tela inicial para cima até a sessão "Descubra Mais" e clicar na opção desejada. Seu cartão já estará habilitado para ambas as funções. 
+            
+            Se você possui a versão antiga do cartão Nubank ou não é cliente do cartão de crédito Nubank, basta solicitar o novo cartão com a função débito - nós emitiremos seu cartão já com a função habilitada.
+            
+            Para isso, basta ir em 'Configurações', clicar em 'Pedir função débito', confirmar o endereço de entrega e pronto! Seu cartão já estará em produção.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingfive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+          <h4>Posso fazer saques com a minha conta do Nubank?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Nossos clientes podem sacar com a função débito em qualquer caixa eletrônico da rede Banco24Horas ou da rede Saque e Pague. Para descobrir onde ficam os terminais mais próximos acesse o site https://www.banco24horas.com.br/para-voce/busca-banco24-horas ou www.saqueepague.com.br/onde-encontrar.aspx.
+
+            É importante saber que existe uma tarifa para cada saque, que é de R$ 6,50 independente do valor sacado ou da quantidade de saques. Vale notar que só paga quem usar e quando usar.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingsix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+          <h4>Existe algum risco em colocar meu dinheiro na conta do Nubank?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">O Nubank é hoje o maior banco digital independente do mundo e conta com mais de 40 milhões de clientes em todos os 5.570 municípios do Brasil. Operamos com fluxo de caixa positivo desde 2017 e, por isso, não dependemos de novos aportes de capital para pagar nossas despesas mensais. Em outras palavras: o seu dinheiro está bem seguro no Nubank, pode ficar tranquilo. Além disso, todas as opções de depósitos na conta do Nubank são de baixo risco e possuem algum tipo de garantia. Você pode optar por dois tipos de depósitos na conta do Nubank: "Conta de Pagamentos" e "Aplicação em RDB". Não importa em qual modalidade você depositar, em ambas, além de ter rendimento diário, automático e superior à poupança, a conta do Nubank é considerada como um depósito de baixo risco. Se o seu dinheiro estiver na "Conta de Pagamentos", ele fica separado do patrimônio do Nubank e só pode ser usado para aplicações em Títulos Públicos Federais. Por isso, nesse caso, o risco na conta é similar ao de uma aplicação no Tesouro Direto - renda fixa, pós-fixado, garantido pelo Governo - e dispensa outro tipo de garantia. <br> <br> Já a aplicação em RDB é a opção de depósito padrão da conta do Nubank. Nesta opção, os depósitos serão usados para adquirir títulos de RDB emitidos pela Nu Financeira, a empresa financeira do Nubank, e podem ter a cobertura do FGC (até R$250 mil) ou serem vinculados a Títulos Públicos emitidos pelo Governo Federal. A alocação dos depósitos em RDB com FGC ou vinculados a Títulos Públicos é automática e varia conforme a disponibilidade de cada produto no momento do depósito. </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingseven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+         <h4>A conta do Nubank é uma conta corrente ou conta poupança?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">O termo correto que define o que é a conta do Nubank é "Conta de Pagamentos". Isso ocorre por que o Nubank é uma instituição de pagamentos, e não um banco. Pelo mesmo motivo, nosso cartão com função débito não é tecnicamente um cartão de débito, pois, apesar da funcionalidade ser a mesma, este somente poderia ser oferecido por um banco e atrelado a uma conta de depósito. Para saber mais sobre Contas de Pagamentos, use esse link.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading	eighth">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeighth" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h4>Por que iremos cobrar pelo saque?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseeighth" class="accordion-collapse collapse" aria-labelledby="flush-headingeighth" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Somos uma empresa 100% digital, mas entendemos que o dinheiro físico ainda é importante para muitos de nossos clientes. Por isso, disponibilizamos o serviço de saque utilizando a estrutura de empresas parceiras, que inclui as redes do Banco24Horas e Saque e Pague.
+
+            Usar essas redes externas de caixas implica em um custo. O valor cobrado é destinado a cobrir os custos de terceiros, como transporte e segurança do dinheiro, o aluguel do espaço em que os caixas estão e a manutenção destes equipamentos, bem como impostos e os custos operacionais internos.
+            
+            Neste momento, nós entendemos que essa tarifa é a única forma de disponibilizar esse serviço para todo mundo sem limitar ou passar a cobrar por funções que julgamos ser mais importantes para os nossos clientes a longo prazo.
+            
+            Dessa maneira, conseguimos manter todas as características da conta do Nubank: uma conta sem anuidade, com rentabilidade automática e maior do que a poupança, com TEDs gratuitas e ilimitadas para qualquer banco e cartão com função débito grátis.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingnine">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapsenine">
+          <h4>Se eu tiver a conta do Nubank vou ter o cartão de crédito aprovado?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingnine" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Ser cliente da nossa conta digital não garante a liberação do cartão de crédito, mas pode nos ajudar no seu processo de análise, pois nos ajuda a construir um relacionamento e ter mais informações na hora de analisar o pedido do cartão.
+
+            Se você não receber a aprovação para o cartão de crédito significa que no momento não conseguimos aprovar o seu roxinho. No entanto, não significa que você tenha alguma pendência em seu nome ou que ele esteja "sujo". Este é um dos critérios que avaliamos, mas não é o único.
+            
+            A maioria dos pedidos recusados pelo Nubank não acontecem por problemas encontrados nas finanças das pessoas, mas sim por simples falta de informações disponíveis sobre quem está solicitando o cartão. Por isso, ao usar a conta do Nubank, a nossa conta digital, pode nos ajudar a conhecer mais o perfil do cliente na hora da avaliação do cartão. A conta do Nubank não tem tarifas de manutenção, oferece transferências sem custos e ilimitadas e um rendimento maior do que na poupança.</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingten">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          <h4>Quem pode ter a conta do Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapseten" class="accordion-collapse collapse show" aria-labelledby="headingten" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>A conta do Nubank foi feita para todos. Não é preciso passar por uma análise de crédito, você abre sua conta direto no nosso aplicativo, tudo rápido e sem burocracia.
+
+            Nossas únicas restrições são: ter no mínimo 18 anos, ser residente do Brasil e ter um smartphone compatível com os nossos aplicativos para Android (versão 4.4 ou superior) ou iOS (versão 10 ou superior).
+            
+            Mesmo quem não foi aprovado para ter o cartão de crédito do Nubank poderá ter a conta. Fazemos apenas uma análise cadastral. </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <h3>Sobre o cartão</h3>
+  <br>
+  <br>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h4>Quais são as tarifas do Cartão de Crédito Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Somos contra cobrar tarifas para você cuidar do seu dinheiro. Como usamos canais 100% digitais e reduzimos a burocracia e a papelada ao máximo, conseguimos repassar apenas economias, nunca gastos. A única tarifa existente no Cartão de Crédito Nubank é para quem aderir ao programa de benefícios Nubank Rewards. Diferentemente da maioria dos outros cartões, essa tarifa é opcional e nos possibilita oferecermos ainda mais benefícios para você otimizar a sua vida.
+
+            É possível acessar nossa tabela de tarifas na sessão de contratos..
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h4>Para quem é o Cartão de Crédito Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>O Cartão de Crédito Nubank foi desenhado para todos que desejam uma experiência mais simples e transparente para gerir os seus gastos. Nossas únicas restrições são: ter no mínimo 18 anos, ser residente do Brasil, estar com o CPF regular perante a Receita Federal e ter um smartphone compatível com os nossos aplicativos para Android (versão 4.4 ou superior) ou iOS (versão 10 ou superior). Todos os interessados em ter o cartão de crédito Nubank passam por análise de cadastro e de crédito.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h4>Se meu pedido for aprovado, qual cartão receberei?</h4>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Você receberá o Cartão Nubank Mastercard®, aceito em mais de 30 milhões de estabelecimentos no mundo todo e que também te dá acesso aos benefícios da bandeira Mastercard®.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingfo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefor" aria-expanded="true" aria-controls="collapsefo">
+          <h4>Quais são os benefícios do Cartão de Crédito Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapsefor" class="accordion-collapse collapse show" aria-labelledby="headingfor" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Além do controle simples e transparente dos seus gastos em tempo real (sem nenhuma tarifa ou anuidade), você ainda pode receber descontos ao antecipar suas parcelas. No aplicativo você ainda pode bloquear e desbloquear seu cartão, pedir aumento de limite e mudar sua data de vencimento. Outra funcionalidade bem legal é o pagamento por aproximação. Vale conferir cada funcionalidade e as respectivas condições na nossa página principal. A bandeira Mastercard também proporciona muitos benefícios aos nossos clientes. Dá uma olhada:
+
+            - Os benefícios da bandeira MasterCard
+            
+            - Acesso ao MasterCard® Surpreenda, com o qual você ganha pontos em todas as compras.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingfive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+          <h4>Como funciona a lista de espera para o Cartão Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>A lista de espera para o cartão de crédito Nubank acabou! Mudamos nosso processo de aprovação e eliminamos a lista de espera. Antes, as pessoas que aplicavam para o cartão poderiam ser aprovadas na hora ou entrar para uma lista na qual poderiam receber um convite em até 3 meses ou serem negadas e terem esperar 6 meses para aplicar de novo. Agora, todas as pessoas que se cadastrarem para ser clientes do Nubank receberão acesso a conta digital e faremos uma análise de cadastro e crédito. Se forem aprovadas, também receberão o convite para o cartão. Quer conhecer mais sobre nosso modelo de análise?</strong>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingsix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+          <h4>Tenho o nome "limpo" e não fui aprovado na análise do Nubank. Por quê?</h4>
+        </button>
+      </h2>
+      <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Nossa análise se baseia em informações de bancos de dados públicos e em critérios próprios internos. Tudo isso gera uma pontuação interna para entender quais perfis de uso se encaixam em nossa capacidade operacional neste período.
+
+            A pontuação mínima para ter o cadastro aprovado pode mudar de acordo com os perfis que solicitaram o cartão no mesmo período. Além disso, novas informações e fontes de dados são constantemente incluídas em nossos modelos de análise, podendo influenciar essa pontuação. Mas não se preocupe, não fazemos análise de risco de crédito para o mercado. Nossa atividade não tem a ver com "credit scoring" e, portanto, não receber o convite para ter o cartão Nubank não significa que você tenha alguma pendência em seu nome ou que ele esteja "sujo". Quer conhecer mais sobre nosso modelo de análise?</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingseven">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+          <h4>Quem emite o Cartão Nubank?</h4>
+        </button>
+      </h2>
+      <div id="collapseseven" class="accordion-collapse collapse show" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Nós mesmos emitimos o Cartão Nubank e somos licenciados pela bandeira MasterCard® para a emissão de cartões de crédito no Brasil.</strong>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Sobre o Rewards</h3>
+    <br>
+    <br>
+    <br>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h4>Qualquer compra pode ser apagada?</h4>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Procuramos entender quais eram as compras que mais interessavam a todos os nossos usuários e, para conseguir oferecer ainda mais benefícios, decidimos focar em algumas categorias e serviços, como restaurantes, Netflix, Uber, Amazon, iFood, serviços de streaming de música e qualquer hotel ou passagem aérea.
+
+              Para saber mais sobre o programa e conhecer todos os parceiros, você pode acessar o post sobre Rewards no nosso blog.</strong> 
+          </div>
+        </div>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingtwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+              <h4>Posso cancelar o Nubank Rewards a qualquer momento?</h4>
+            </button>
+          </h2>
+          <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Sim! Na tela inicial, toque no seu avatar, no canto superior esquerdo, e depois em "Configurar Rewards". Após isso, é só selecionar "Cancelar assinatura". Seus pontos acumulados serão cancelados, por isso recomendamos utilizá-los antes de sair do programa. </strong> 
+            </div>
+          </div>
+        </div>
+
+  
+<!-- MENU ACORDEON fim  -->
+ </div>
+</body>
+</html>
