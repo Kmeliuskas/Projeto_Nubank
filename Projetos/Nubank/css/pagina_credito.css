@@ -13,6 +13,11 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    margin: 10px 0;
+}
+
+
 
 /* Header */
 
@@ -96,18 +101,19 @@ ul li .badge.rounded-pill {
 
 /* Imagens principais de fundo do conteudo  */
 .imagem-principal {
-    height: 800px;
-    background-image: url(../img/Fundo_tela_principal.jpeg);
+    height: 600px;
+    background-color: #f5f5f5;
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
+    position: relative;
+    
 }
 
 /* Configurações da primeira imagem */
 .informacoes-da-imagem {
     left: 12%;
     top: 40%;
-    color: #fff;
+    color: #191919;
 }
 
 .container-fluid .informacoes-da-imagem a {
@@ -447,6 +453,50 @@ footer .row ul li a:hover {
     bottom: 0px;
 }
 
+
+
+/* Formatações da pagina de crédito */
+.img2 {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+}
+
+.img4 {
+    width: auto;
+    height: 400px;
+}
+
+.img2 {
+    background-image: url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem-mulher-celular {
+    height: 600px;
+    background-image: url(../img/img3.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.informacoes-da-imagem-mulher {
+    text-decoration: none;
+}
+
+
+
+/* Carrousel */
+#carouselExampleCaptions {
+    
+}
+
 /*Media Queries */
 
 @media (max-width: 991px) {
@@ -476,4 +526,8 @@ footer .row ul li a:hover {
         margin-left: 10px;
     }
      
+    /* Esconder a imagem roxinha */
+    #imagem-principal .imagem-principal .imagem-cartoes-principais {
+        display: none;
+    }
 }

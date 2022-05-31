@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Formatações Gerais */
+
+
+
+
+
+/* Header */
+
+#logo_imagem {
+    padding: 1px;
+    margin-right: 10px;
+}
+
+#nav_principal #navbarSupportedContent li {
+    
+    margin-left: 10px;
+}
+
+ul li .badge.rounded-pill {
+    background-color: #ebd7fa;
+    color: black;
+}
+
+/* Link Login */
+form a  {
+    margin-left: 9px;
+    color: #820ad1;
+    text-decoration: none;
+}
+
+form a i {
+    font-size: 19px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+
+}
+
+.navbarSupportedContent, form a::before {
+    content: '';
+    position: absolute;
+    background-color: #820ad1;
+    width: 0%;
+    height: 3px;    
+    top: 40px;
+    transition: 0.3s;
+}
+
+
+.navbarSupportedContent, form a:hover {
+    color: #820ad1;
+}
+.navbarSupportedContent, form a:hover::before  {
+    width:3%;
+}
+
+/* Imagens */
+#imagens {
+    background-image: url(../img/Fundo_tela_principal.jpeg);
+    background-position: center ;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+/*Media Queries */
+
+/* Removendo o hover em celulares e tablets */
+@media (max-width: 991px) {
+    .navbarSupportedContent, form a:hover::before  {
+        width:0%;
+    }
+}

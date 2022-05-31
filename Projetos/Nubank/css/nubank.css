@@ -1,0 +1,133 @@
+
+#idtexto {
+    border: none;
+}
+.divp {
+    display: flex;
+    background-color: cornsilk;
+    height: 750px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 40px;
+    align-items: center;
+}
+.transform {    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: blueviolet;
+    transition: 4s;
+}
+.img {
+    height: 400px;
+}
+.divs {
+    display: flex;
+    background-color: darkkhaki;
+    height: 750px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.t3 {
+    width: 400px;
+    align-items: flex-end;
+    font-size: 20px;
+    margin-left: 100px;  
+}
+    
+.img2 {
+    height: 550px;
+    margin-bottom: 140px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.divt {
+    height: 690px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.divq {
+    background-color:dimgray;
+    height: 750px;
+    width: 100%;
+}
+.texto3 {
+    width: 240px;
+    margin: 30px;
+    padding: 5px;
+    bottom: 50px;
+    right: 15px;
+}
+#galery {
+    background: url(imgs.jpg) center center no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.texto4 {
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+    margin-left: 130px;
+}
+.img4 {
+    margin-top: 25px;
+    margin-left: 150px;
+    width: 350px;
+    height: 600px; 
+    flex:5;
+}
+.comp {
+    width: 350px;
+}
+#carrosel {
+    width: 250px;
+    margin-left: 750px;
+}
+#botão2 {
+        margin-left: 750px;
+}
+.tituloq {
+    display: flex;
+    justify-content: center;
+    margin-left: 350px;
+    margin-top: 0px;    
+}
+
+.div5 {
+    background-color:gray;
+    height: 750px;
+    width: 100%;
+}
+.div6 {
+    background-color:rgb(219, 211, 175);
+    height: 750px;
+    width: 100%;
+}
+.div7 {
+    background-color:rgb(56, 56, 56);
+    height: 750px;
+    width: 100%; 
+}
+.input1 {
+    border: white none;
+    margin-left: 60px;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 200;
+    font-size: 25px;
+}
+
+.button:hover{
+    border: none;
+    border-radius: 15px;
+    background-color: green;
+    width: 60%;
+    transition: all 1.2s;
+    
+}
+
+
