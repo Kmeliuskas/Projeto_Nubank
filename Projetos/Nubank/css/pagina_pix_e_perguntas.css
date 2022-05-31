@@ -7,9 +7,6 @@
     font-weight: 800;
 }
 
-
-
-
 /* Header */
 
 #logo_imagem {
@@ -62,12 +59,15 @@ form a i {
 
 /* Imagens */
 #imagens {
-    background-image: url(man-with-cellphone-lg-3x.jpeg);
+    background-image: url(../img/man-with-cellphone-lg-3x.jpeg);
     background-position: center ;
     background-size: cover;
 }
 
-
+.cont-imagem1 .row {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 /* Rodapé */
