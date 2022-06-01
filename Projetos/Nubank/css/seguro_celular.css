@@ -462,9 +462,22 @@ footer .row ul li a:hover {
     background-color: #820ad1;
 }
 
-.texto-celular {
-    color: #191919;
+.juntar {
+    position: relative;
+    margin: 20px 0;
 }
+.juntar img {
+    position: absolute;
+    margin-bottom: 0px;
+}
+.juntar iframe {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+
+
 
 /*Media Queries */
 
@@ -495,4 +508,10 @@ footer .row ul li a:hover {
         margin-left: 10px;
     }
      
+}
+
+@media (max-width: 576px) {
+    .texto-celular {
+        margin-top: 30px;
+    }
 }
